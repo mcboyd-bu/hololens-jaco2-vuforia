@@ -56,6 +56,12 @@ GameObject:
   - component: {fileID: 124000011504821460}
   - component: {fileID: 81000013783107718}
   - component: {fileID: 114000013543835744}
+  - component: {fileID: 114611021888644446}
+  - component: {fileID: 114745316710983650}
+  - component: {fileID: 114184629503751250}
+  - component: {fileID: 114200684742885518}
+  - component: {fileID: 114549558178886742}
+  - component: {fileID: 114433108233205224}
   m_Layer: 0
   m_Name: HoloLensCamera
   m_TagString: MainCamera
@@ -389,12 +395,12 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.85
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 16
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -404,11 +410,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!81 &81000013783107718
 AudioListener:
   m_ObjectHideFlags: 1
@@ -647,6 +653,91 @@ MonoBehaviour:
   Axis0Destination: 5
   Axis1Destination: 4
   Axis2Destination: 6
+--- !u!114 &114184629503751250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd65d7165378f64c8cb395511263b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spherePrefab: {fileID: 4369275343985980, guid: 1b795a1b3a17c3443ae3fa80c8149b4e,
+    type: 2}
+  labelPrefab: {fileID: 4734245075540920, guid: c048f8ba0a5a91a428f08610e7d94054,
+    type: 2}
+  cursor: {fileID: 0}
+  lastSpherePlaced: {fileID: 0}
+  lastSphereLabelPlaced: {fileID: 0}
+  lastSphereLabelPlacedText: {fileID: 0}
+--- !u!114 &114200684742885518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c8402717f709440b03c426c46a485f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planePrefab: {fileID: 4357949994055050, guid: 05ea2c72b94ba50449fbb97db1698086,
+    type: 2}
+  cursor: {fileID: 0}
+  lastPlanePlaced: {fileID: 0}
+--- !u!114 &114433108233205224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd79e4c01526d54fab9bd37483bcdb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 0}
+  labelPrefab: {fileID: 4734245075540920, guid: 414278910d36ac54da827ad4a2b68ed7,
+    type: 2}
+  lastLabelPlaced: {fileID: 0}
+  lastLabelPlacedText: {fileID: 0}
+--- !u!114 &114549558178886742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0162cd151211cb544a2b40905fe72107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114611021888644446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47f92041efbb4b429a4eafca855ebe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114745316710983650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011021619270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mWorldCenterMode: 2
+  mWorldCenter: {fileID: 0}
 --- !u!124 &124000011504821460
 Behaviour:
   m_ObjectHideFlags: 1

@@ -13,24 +13,24 @@ public class WorldCursor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Camera.main)
-        {
-            var headPosition = Camera.main.transform.position;
-            var gazeDirection = Camera.main.transform.forward;
+        //if (Camera.main)
+        //{
+        //    var headPosition = Camera.main.transform.position;
+        //    var gazeDirection = Camera.main.transform.forward;
 
-            RaycastHit hitInfo;
+        //    RaycastHit hitInfo;
 
-            if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
-            {
-                meshRenderer.enabled = true;
-                this.transform.position = hitInfo.point;
-                this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
-            }
-            else
-            {
-                meshRenderer.enabled = false;
-            }
-        }
+        //    if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
+        //    {
+        //        meshRenderer.enabled = true;
+        //        this.transform.position = hitInfo.point;
+        //        this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+        //    }
+        //    else
+        //    {
+        //        meshRenderer.enabled = false;
+        //    }
+        //}
         		
 	}
 }
