@@ -15,6 +15,9 @@ using Vuforia;
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     private TextMesh _sphereLabel;
+    private string _sphereText;
+    private bool _tracked;
+    private int _foundNumber;
 
     #region PROTECTED_MEMBER_VARIABLES
 
@@ -26,8 +29,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void Start()
     {
-        Debug.Log("1. virtual void start");
-
+        //Debug.Log("1. virtual void start");
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
@@ -35,7 +37,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnDestroy()
     {
-        Debug.Log("2. virtual void ondestroy");
+        //Debug.Log("2. virtual void ondestroy");
         if (mTrackableBehaviour)
             mTrackableBehaviour.UnregisterTrackableEventHandler(this);
     }
@@ -52,8 +54,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         TrackableBehaviour.Status previousStatus,
         TrackableBehaviour.Status newStatus)
     {
-        Debug.Log("3. public void OnTrackableStateChanged");
-
+        //Debug.Log("3. public void OnTrackableStateChanged");
         if (newStatus == TrackableBehaviour.Status.DETECTED ||
             newStatus == TrackableBehaviour.Status.TRACKED ||
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
@@ -82,52 +83,95 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        Debug.Log("4. virtual void OnTrackingFound");
-        var rendererComponents = GetComponentsInChildren<Renderer>(true);
-        var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        //Debug.Log("4. virtual void OnTrackingFound");
+        //var rendererComponents = GetComponentsInChildren<Renderer>(true);
+        //var colliderComponents = GetComponentsInChildren<Collider>(true);
+        //var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
-        // Enable rendering:
-        foreach (var component in rendererComponents)
-            component.enabled = true;
+        //// Enable rendering:
+        //foreach (var component in rendererComponents)
+        //    component.enabled = true;
 
-        // Enable colliders:
-        foreach (var component in colliderComponents)
-            component.enabled = true;
+        //// Enable colliders:
+        //foreach (var component in colliderComponents)
+        //    component.enabled = true;
 
-        // Enable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = true;
+        //// Enable canvas':
+        //foreach (var component in canvasComponents)
+        //    component.enabled = true;
 
         _sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
-        _sphereLabel.text += "\r\nYES! OnTrackingFound";
-        _sphereLabel.color = Color.red;
+        _foundNumber += 1;
 
+        if (!_tracked)
+        {
+            _tracked = true;
+
+            //Debug.Log("4. virtual void OnTrackingFound");
+            var rendererComponents = GetComponentsInChildren<Renderer>(true);
+            var colliderComponents = GetComponentsInChildren<Collider>(true);
+            var canvasComponents = GetComponentsInChildren<Canvas>(true);
+
+            // Enable rendering:
+            foreach (var component in rendererComponents)
+                component.enabled = true;
+
+            // Enable colliders:
+            foreach (var component in colliderComponents)
+                component.enabled = true;
+
+            // Enable canvas':
+            foreach (var component in canvasComponents)
+                component.enabled = true;
+
+            //_sphereText = _sphereLabel.text;
+            //_sphereLabel.text = _sphereText + "\r\nYES! OnTrackingFound " + _foundNumber;
+            //_sphereLabel.color = Color.red;
+
+            
+        }
+        else
+        {
+            //_sphereLabel.text = _sphereText + "\r\nYES! OnTrackingFound " + _foundNumber;
+            //_sphereLabel.color = Color.red;
+        }
+        
     }
 
 
     protected virtual void OnTrackingLost()
     {
-        Debug.Log("5. virtual void OnTrackingLost");
-        var rendererComponents = GetComponentsInChildren<Renderer>(true);
-        var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        //Debug.Log("5. virtual void OnTrackingLost");
+        //var rendererComponents = GetComponentsInChildren<Renderer>(true);
+        //var colliderComponents = GetComponentsInChildren<Collider>(true);
+        //var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
-        // Disable rendering:
-        foreach (var component in rendererComponents)
-            component.enabled = false;
+        //// Disable rendering:
+        //foreach (var component in rendererComponents)
+        //    component.enabled = false;
 
-        // Disable colliders:
-        foreach (var component in colliderComponents)
-            component.enabled = false;
+        //// Disable colliders:
+        //foreach (var component in colliderComponents)
+        //    component.enabled = false;
 
-        // Disable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = false;
+        //// Disable canvas':
+        //foreach (var component in canvasComponents)
+        //    component.enabled = false;
 
         _sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
-        _sphereLabel.text += "\r\nYES! OnTrackingLost";
-        _sphereLabel.color = Color.blue;
+
+        if (!_tracked)
+        {
+            _sphereText = _sphereLabel.text;
+        }
+        else
+        {
+            //_sphereLabel.text = _sphereText + "\r\nYES! OnTrackingLost " + _foundNumber;
+            //_sphereLabel.color = Color.blue;
+        }
+
+        
+        
     }
 
     #endregion // PROTECTED_METHODS

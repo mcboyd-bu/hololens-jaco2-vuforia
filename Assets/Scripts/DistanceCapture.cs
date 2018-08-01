@@ -31,8 +31,8 @@ public class DistanceCapture : MonoBehaviour {
         if (tapCount == 0)
         {
             // Instantiate plane and sphere
-            ArmPlane.instance.CreatePlane();
-            TargetSphere.instance.CreateSphere();
+            //ArmPlane.instance.CreatePlane();
+            //TargetSphere.instance.CreateSphere();
             //Vector3 vectPtoS = ArmPlane.instance.transform.position - TargetSphere.instance.transform.position;
             //string displayText = "Arm Pos: " + ArmPlane.instance.transform.position.ToString() + "\r\nSphere Pos: " + TargetSphere.instance.transform.position.ToString() + "\n\r" + vectPtoS.ToString();
             // TargetSphere.instance.lastSphereLabelPlacedText.text = (new Vector3(-0.5f, 0.5f, 0.5f)).ToString();

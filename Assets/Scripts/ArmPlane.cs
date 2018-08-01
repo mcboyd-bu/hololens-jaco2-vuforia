@@ -23,6 +23,11 @@ public class ArmPlane : MonoBehaviour {
         lastPlanePlaced = Instantiate(planePrefab, cursor.transform.position, Quaternion.Euler(0,0,0));
     }
 
+    public void CreatePlanePR(Vector3 position, Quaternion rotation)
+    {
+        lastPlanePlaced = Instantiate(planePrefab, position, rotation);
+    }
+
     // Use this for initialization
     void Start () {
 		
