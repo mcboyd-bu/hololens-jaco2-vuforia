@@ -25,6 +25,7 @@ public class ArmPlane : MonoBehaviour {
 
     public void CreatePlanePR(Vector3 position, Quaternion rotation)
     {
+        // Using flat rotation (Quaternion.Euler below, rather than "rotation" variable passed into method) for now...
         lastPlanePlaced = Instantiate(planePrefab, position, rotation);
     }
 

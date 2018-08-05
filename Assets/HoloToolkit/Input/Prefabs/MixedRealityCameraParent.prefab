@@ -56,6 +56,12 @@ GameObject:
   - component: {fileID: 81867938468442352}
   - component: {fileID: 114061490341948574}
   - component: {fileID: 114504390558679740}
+  - component: {fileID: 114358141129337206}
+  - component: {fileID: 114964936584295592}
+  - component: {fileID: 114604466360942624}
+  - component: {fileID: 114500232772166290}
+  - component: {fileID: 114595391163568380}
+  - component: {fileID: 114482102802400108}
   m_Layer: 0
   m_Name: MixedRealityCamera
   m_TagString: MainCamera
@@ -504,7 +510,7 @@ Camera:
   m_GameObject: {fileID: 1372541880982678}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -527,6 +533,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -668,7 +675,6 @@ MonoBehaviour:
   FloorQuad: {fileID: 1520281459093612, guid: 08d25ccfbbc595b4a820c7edd551d095, type: 2}
   boundaryHeight: 10
   opaqueTrackingSpaceType: 1
-  transparentTrackingSpaceType: 0
   renderFloor: 1
   renderBoundary: 1
 --- !u!114 &114225625019075894
@@ -703,6 +709,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeSharedMaterial: 0
+--- !u!114 &114358141129337206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd79e4c01526d54fab9bd37483bcdb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 0}
+  labelPrefab: {fileID: 4734245075540920, guid: 414278910d36ac54da827ad4a2b68ed7,
+    type: 2}
+  lastLabelPlaced: {fileID: 0}
+  lastLabelPlacedText: {fileID: 0}
 --- !u!114 &114465015496195000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -723,6 +745,32 @@ MonoBehaviour:
   Axis0Destination: 0
   Axis1Destination: 2
   Axis2Destination: 6
+--- !u!114 &114482102802400108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47f92041efbb4b429a4eafca855ebe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114500232772166290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c8402717f709440b03c426c46a485f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planePrefab: {fileID: 4357949994055050, guid: 05ea2c72b94ba50449fbb97db1698086,
+    type: 2}
+  cursor: {fileID: 0}
+  lastPlanePlaced: {fileID: 0}
 --- !u!114 &114504390558679740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -738,10 +786,40 @@ MonoBehaviour:
   CameraClearFlags_OpaqueDisplay: 1
   BackgroundColor_OpaqueDisplay: {r: 0, g: 0, b: 0, a: 1}
   OpaqueQualityLevel: 5
-  NearClipPlane_TransparentDisplay: 0.85
+  NearClipPlane_TransparentDisplay: 0.3
   CameraClearFlags_TransparentDisplay: 2
   BackgroundColor_TransparentDisplay: {r: 0, g: 0, b: 0, a: 0}
   HoloLensQualityLevel: 0
+--- !u!114 &114595391163568380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd65d7165378f64c8cb395511263b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spherePrefab: {fileID: 1921299228418010, guid: 1b795a1b3a17c3443ae3fa80c8149b4e,
+    type: 2}
+  labelPrefab: {fileID: 4734245075540920, guid: c048f8ba0a5a91a428f08610e7d94054,
+    type: 2}
+  cursor: {fileID: 0}
+  lastSpherePlaced: {fileID: 0}
+  lastSphereLabelPlaced: {fileID: 0}
+  lastSphereLabelPlacedText: {fileID: 0}
+--- !u!114 &114604466360942624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0162cd151211cb544a2b40905fe72107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114690106885971528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -869,6 +947,19 @@ MonoBehaviour:
   Axis0Destination: 2
   Axis1Destination: 3
   Axis2Destination: 6
+--- !u!114 &114964936584295592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372541880982678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mWorldCenterMode: 3
+  mWorldCenter: {fileID: 0}
 --- !u!114 &114982334573009450
 MonoBehaviour:
   m_ObjectHideFlags: 1
