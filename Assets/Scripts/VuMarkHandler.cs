@@ -29,6 +29,12 @@ public class VuMarkHandler : MonoBehaviour {
             //_sphereLabel2.text += "\r\n" + bhvr.name;
             if (pCount == 0)
             {
+                //GameObject uiText1 = GameObject.Find("LookingArm");
+                //GameObject uiText2 = GameObject.Find("LookingArmSubtext");
+                //GameObject uiText3 = GameObject.Find("ArmFound");
+                //uiText1.SetActive(false);
+                //uiText2.SetActive(false);
+                //uiText3.SetActive(true);
                 //GameObject _textLoading = GameObject.Find("LoadingArm");
                 //_textLoading.SetActive(false);
                 //GameObject _textLoadingSub = GameObject.Find("LoadingArmSubtext");
@@ -45,9 +51,11 @@ public class VuMarkHandler : MonoBehaviour {
                 //Vector3 relativePos = _markText.transform.forward;
                 //Quaternion rot3 = Quaternion.LookRotation(relativePos);
 
+                pCount += 1;
+
                 //ArmPlane.instance.CreatePlanePR(pos2, rot3);
                 TargetSphere.instance.CreateSphere();
-                pCount += 1;
+                
                 //_sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
                 //_sphereLabel.text += "\r\nMT pos: " + _markText.transform.position.ToString() + "\r\nMT forw: " + relativePos.ToString();
                 //_sphereLabel2 = GameObject.Find("SphereLabel2").GetComponent<TextMesh>();

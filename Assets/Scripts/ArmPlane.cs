@@ -25,8 +25,10 @@ public class ArmPlane : MonoBehaviour {
 
     public void CreatePlanePR(Vector3 position, Quaternion rotation)
     {
-        // Using flat rotation (Quaternion.Euler below, rather than "rotation" variable passed into method) for now...
         lastPlanePlaced = Instantiate(planePrefab, position, rotation);
+        GameObject mrc = GameObject.Find("MixedRealityCameraParent");
+        lastPlanePlaced.transform.SetParent(mrc.transform);
+        lastPlanePlaced.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
     }
 
     // Use this for initialization
