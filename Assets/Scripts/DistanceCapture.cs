@@ -13,9 +13,13 @@ public class DistanceCapture : MonoBehaviour {
 
     private Transform _sphere;
 
+    public Transform sphereHighlightPrefab;
+
     private TextMesh _sphereLabel;
 
     private int tapCount = 0;
+
+    private Color _initColor;
 
     // Use this for initialization
     void Start () {
@@ -37,6 +41,8 @@ public class DistanceCapture : MonoBehaviour {
             //string displayText = "Arm Pos: " + ArmPlane.instance.transform.position.ToString() + "\r\nSphere Pos: " + TargetSphere.instance.transform.position.ToString() + "\n\r" + vectPtoS.ToString();
             // TargetSphere.instance.lastSphereLabelPlacedText.text = (new Vector3(-0.5f, 0.5f, 0.5f)).ToString();
             // TargetSphere.instance.lastSphereLabelPlacedText.text = displayText; // (vectPtoS).ToString();
+            Renderer rendi = GameObject.Find("Sphere1").GetComponent<Renderer>();
+            _initColor = rendi.material.color;
         }
         else if (tapCount > 0)
         {
@@ -45,9 +51,13 @@ public class DistanceCapture : MonoBehaviour {
             //_sphereLabel.text = "YES! " + test;
             //_sphereLabel.color = Color.red;
             // ResultsLabel.instance.CreateLabel();
-            string objName = GazeManager.Instance.HitObject.name;
+            GameObject gazedObj = GazeManager.Instance.HitObject;
+            string objName = gazedObj.name;
             if (objName.StartsWith("Sphere"))
             {
+                GameObject highlightInstance = GameObject.Find("SPH");
+                if (highlightInstance != null)
+                    Destroy(highlightInstance);
                 //string sphereTagNumber = objName.Substring(objName.Length - 1);
                 //_sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
                 //_sphereLabel.text = "YES! Tag#: " + sphereTagNumber + "\r\nX: " + GazeManager.Instance.HitObject.GetComponent<SphereXYZ>().X.ToString();
@@ -57,12 +67,15 @@ public class DistanceCapture : MonoBehaviour {
                 for (int i = 0; i < 6; i++)
                 {
                     Renderer rendi = GameObject.Find("Sphere"+i.ToString()).GetComponent<Renderer>();
-                    rendi.material.color = new Color(1f, 1f, 1f, 0.576f);  // Default white color for all spheres
+                    rendi.material.color = _initColor; // new Color(1f, 1f, 1f, 0.576f);  // Default white color for all spheres
                 }
 
                 //Fetch the Renderer from the GameObject
                 Renderer rend = GazeManager.Instance.HitObject.GetComponent<Renderer>();
-                rend.material.color = new Color(0.502f, 1f, 0f, 0.8f);  // Green color for the selected sphere
+                rend.material.color = new Color(0.502f, 1f, 0f, 0.9f);  // Green color for the selected sphere
+
+                Transform highlight = Instantiate(sphereHighlightPrefab, gazedObj.transform.position, gazedObj.transform.rotation);
+                highlight.name = "SPH";
 
                 float _x = GazeManager.Instance.HitObject.GetComponent<SphereXYZ>().X;
                 float _y = GazeManager.Instance.HitObject.GetComponent<SphereXYZ>().Y;

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4734245075540920}
   - component: {fileID: 23643028159995708}
   - component: {fileID: 102191685185843800}
+  - component: {fileID: 114462792637130910}
   m_Layer: 0
   m_Name: LabelTextSmall
   m_TagString: Untagged
@@ -96,3 +97,16 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &114462792637130910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512337236840212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PivotAxis: 1
+  TargetTransform: {fileID: 0}

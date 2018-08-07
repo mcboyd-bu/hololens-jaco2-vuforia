@@ -529,10 +529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a182ebc79306a7b4e8b851048ee80e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textMesh: {fileID: 0}
-  _text: 
-  _counter: 0
-  _frame: 0
 --- !u!1001 &547939977
 Prefab:
   m_ObjectHideFlags: 0
@@ -584,7 +580,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d698790d3facd3d4289a13fa1243030a, type: 2}
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4357949994055050, guid: 05ea2c72b94ba50449fbb97db1698086, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.07
@@ -660,6 +656,12 @@ Prefab:
       propertyPath: spherePrefab
       value: 
       objectReference: {fileID: 4369275343985980, guid: 1b795a1b3a17c3443ae3fa80c8149b4e,
+        type: 2}
+    - target: {fileID: 114604466360942624, guid: d29bc40b7f3df26479d6a0aac211c355,
+        type: 2}
+      propertyPath: sphereHighlightPrefab
+      value: 
+      objectReference: {fileID: 4181198031345706, guid: 3c6f94f7b3912554ab206bdae230c1d7,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d29bc40b7f3df26479d6a0aac211c355, type: 2}

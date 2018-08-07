@@ -26,6 +26,8 @@ public class TargetSphere : MonoBehaviour {
     [HideInInspector]
     public TextMesh lastSphereLabelPlacedText;
 
+    private VuMarkManager vuMarkManager;
+
     public void Awake()
     {
         instance = this;
@@ -48,12 +50,12 @@ public class TargetSphere : MonoBehaviour {
             lastSpherePlaced = Instantiate(spherePrefab, armV + spherePositions[i], sphereRotation2);
             
             _relativePos = _arm.InverseTransformPoint(lastSpherePlaced.position);
-            _relativePos = _relativePos * 0.007f;
+            _relativePos = _relativePos * 0.0049f;
 
             string tagS = "Sphere" + i.ToString();
             string tagSL = "SphereLabel" + i.ToString();
             lastSpherePlaced.name = tagS;
-            lastSphereLabelPlaced = Instantiate(labelPrefab, lastSpherePlaced.transform.position + (new Vector3(0.01f, 0.01f, 0.01f)), transform.rotation);
+            lastSphereLabelPlaced = Instantiate(labelPrefab, lastSpherePlaced.transform.position + (new Vector3(0, -0.05f, -0.05f)), transform.rotation);
             lastSphereLabelPlaced.name = tagSL;
             lastSphereLabelPlacedText = lastSphereLabelPlaced.GetComponent<TextMesh>();
             vectPtoS = lastSpherePlaced.transform.position - armV;
@@ -65,12 +67,13 @@ public class TargetSphere : MonoBehaviour {
             //Renderer rend = lastSpherePlaced.GetComponent<Renderer>();
             //string test = rend.material.color.ToString();
             //string test2 = "\n\rColor: " + test;
-            lastSphereLabelPlacedText.text = vectPtoS.ToString() + "\r\nRel: " + _relativePos.ToString(); // + test2; // + "\n\r" + lastSpherePlaced.name.ToString() + "\n\r" + lastSphereLabelPlaced.name.ToString();
-            
+            //lastSphereLabelPlacedText.text = vectPtoS.ToString() + "\r\nRel: " + _relativePos.ToString(); // + test2; // + "\n\r" + lastSpherePlaced.name.ToString() + "\n\r" + lastSphereLabelPlaced.name.ToString();
+            lastSphereLabelPlacedText.text = _relativePos.ToString();
         }
 
 
         //_arm.gameObject.SetActive(false);
+        
         VuforiaBehaviour.Instance.enabled = false;
 
         //lastSpherePlaced = Instantiate(spherePrefab, cursor.transform.position + sPos, Quaternion.Euler(new Vector3(0, 0, 0)));
