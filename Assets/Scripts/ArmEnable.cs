@@ -16,10 +16,10 @@ public class ArmEnable : MonoBehaviour {
 
     public void OnEnable()
     {
-        StartCoroutine(TextChanges());
+        //StartCoroutine(TextChanges());
     }
 
-    IEnumerator TextChanges()
+    public IEnumerator TextChanges()
     {
         yield return new WaitForSecondsRealtime(2.5f);
         GameObject _textFound = GameObject.Find("ArmFound");
