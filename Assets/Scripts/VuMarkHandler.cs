@@ -29,14 +29,15 @@ public class VuMarkHandler : MonoBehaviour {
             //_sphereLabel2.text += "\r\n" + bhvr.name;
             if (pCount == 0)
             {
-                GameObject uiText1 = GameObject.Find("LoadingArm");
-                GameObject uiText2 = GameObject.Find("LoadingArmSubtext");
-                GameObject uiText3 = GameObject.Find("ArmFound");
-                TextMesh uiText3Mesh = uiText3.GetComponent<TextMesh>();
-                uiText1.SetActive(false);
-                uiText2.SetActive(false);
-                uiText3Mesh.text = "Arm Found!";
-                StartCoroutine(uiText3.GetComponent<ArmEnable>().TextChanges());
+                //GameObject uiText1 = GameObject.Find("LoadingArm");
+                //GameObject uiText2 = GameObject.Find("LoadingArmSubtext");
+                //GameObject uiText3 = GameObject.Find("ArmFound");
+                //TextMesh uiText3Mesh = uiText3.GetComponent<TextMesh>();
+                //uiText1.SetActive(false);
+                //uiText2.SetActive(false);
+                //uiText3Mesh.text = "Arm Found!";
+                GameObject uiText = GameObject.Find("LookingArm");
+                StartCoroutine(uiText.GetComponent<ArmEnable>().TextChanges());
 
                 //GameObject _textLoading = GameObject.Find("LoadingArm");
                 //_textLoading.SetActive(false);

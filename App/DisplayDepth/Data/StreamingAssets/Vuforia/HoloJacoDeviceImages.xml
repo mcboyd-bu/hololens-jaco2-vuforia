@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Box-MarysCrackers.Left" size="0.052000 0.156086"/>
+        <ImageTarget name="Box-MarysCrackers.Bottom" size="0.140000 0.052027"/>
+        <ImageTarget name="Box-MarysCrackers.Back" size="0.140000 0.155936"/>
+        <ImageTarget name="Box-MarysCrackers.Top" size="0.140000 0.052029"/>
+        <ImageTarget name="Box-MarysCrackers.Front" size="0.140000 0.156025"/>
+        <ImageTarget name="Box-MarysCrackers.Right" size="0.052000 0.156000"/>
+        <MultiTarget name="Box-MarysCrackers">
+            <Part name="Box-MarysCrackers.Left" translation="-0.07000000029802322 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="Box-MarysCrackers.Right" translation="0.07000000029802322 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="Box-MarysCrackers.Front" translation="0 0 0.026000000536441803" rotation="AD: 1 0 0 0"/>
+            <Part name="Box-MarysCrackers.Back" translation="0 0 -0.026000000536441803" rotation="AD: 0 1 0 180"/>
+            <Part name="Box-MarysCrackers.Top" translation="0 0.07800000160932541 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="Box-MarysCrackers.Bottom" translation="0 -0.07800000160932541 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

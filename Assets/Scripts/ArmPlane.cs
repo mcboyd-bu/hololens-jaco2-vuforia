@@ -20,11 +20,13 @@ public class ArmPlane : MonoBehaviour {
 
     public void CreatePlane()
     {
+        // Not using this...
         lastPlanePlaced = Instantiate(planePrefab, cursor.transform.position, Quaternion.Euler(0,0,0));
     }
 
     public void CreatePlanePR(Vector3 position, Quaternion rotation)
     {
+        // Or this...
         lastPlanePlaced = Instantiate(planePrefab, position, rotation);
         GameObject mrc = GameObject.Find("MixedRealityCameraParent");
         lastPlanePlaced.transform.SetParent(mrc.transform);

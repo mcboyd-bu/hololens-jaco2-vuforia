@@ -403,6 +403,9 @@
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\StreamingAssets\Vuforia\HoloJacoVuMarkDB.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\HoloJacoVuMarkDB.xml</PackagePath>
     </AppxPackagedFile>
@@ -471,6 +474,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.dat</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\StreamingAssets\Vuforia\HoloJacoVuMarkDB.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\HoloJacoVuMarkDB.dat</PackagePath>
