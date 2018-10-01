@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 DisplayDepth.sln: modified
 DisplayDepth\App.cs: 2F0BABA90621593E9F21729025439CC0
-DisplayDepth\DisplayDepth.csproj: 14BFA74960D38499E51D02DA0B30AAAE
+DisplayDepth\DisplayDepth.csproj: 61B3E204E82572FE7253E5DA68B08BCB
 DisplayDepth\DisplayDepth.csproj.user: modified
 DisplayDepth\Package.appxmanifest: F2042870EFE72063F29E9CC751FCEAB2
 DisplayDepth\project.json: 1D02BC64BAC0D041019673A1C4C51737

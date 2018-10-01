@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-28T20:55:30.674</Modified>
+      <Modified>2018-10-01T18:06:14.978</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\bin\x86\Release\DisplayDepth.exe">
       <PackagePath>entrypoint\DisplayDepth.exe</PackagePath>
-      <Modified>2018-09-28T20:55:05.053</Modified>
+      <Modified>2018-10-01T18:05:55.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-09-28T20:54:19.009</Modified>
+      <Modified>2018-10-01T18:05:15.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -587,15 +587,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-09-28T20:53:27.246</Modified>
+      <Modified>2018-10-01T18:04:23.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-09-28T20:53:14.607</Modified>
+      <Modified>2018-10-01T18:04:11.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-09-28T20:53:12.341</Modified>
+      <Modified>2018-10-01T18:04:08.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -603,35 +603,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-09-28T20:53:27.242</Modified>
+      <Modified>2018-10-01T18:04:23.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-09-28T20:53:14.739</Modified>
+      <Modified>2018-10-01T18:04:11.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2018-09-28T20:53:14.746</Modified>
+      <Modified>2018-10-01T18:04:11.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-09-28T20:53:22.487</Modified>
+      <Modified>2018-10-01T18:04:18.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-09-28T20:53:12.335</Modified>
+      <Modified>2018-10-01T18:04:08.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-09-28T20:53:22.484</Modified>
+      <Modified>2018-10-01T18:04:18.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-09-28T20:54:18.888</Modified>
+      <Modified>2018-10-01T18:05:14.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-09-28T20:54:18.889</Modified>
+      <Modified>2018-10-01T18:05:14.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\HoloJacoDeviceImages.dat</PackagePath>
@@ -664,235 +664,235 @@
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-28T20:55:14.753</Modified>
+      <Modified>2018-10-01T18:06:00.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.488</Modified>
+      <Modified>2018-10-01T18:06:11.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.521</Modified>
+      <Modified>2018-10-01T18:06:11.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.554</Modified>
+      <Modified>2018-10-01T18:06:11.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.606</Modified>
+      <Modified>2018-10-01T18:06:11.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.646</Modified>
+      <Modified>2018-10-01T18:06:11.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.700</Modified>
+      <Modified>2018-10-01T18:06:11.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.733</Modified>
+      <Modified>2018-10-01T18:06:11.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.765</Modified>
+      <Modified>2018-10-01T18:06:11.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.795</Modified>
+      <Modified>2018-10-01T18:06:11.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.830</Modified>
+      <Modified>2018-10-01T18:06:11.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.876</Modified>
+      <Modified>2018-10-01T18:06:11.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.925</Modified>
+      <Modified>2018-10-01T18:06:11.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.978</Modified>
+      <Modified>2018-10-01T18:06:11.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.015</Modified>
+      <Modified>2018-10-01T18:06:11.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.053</Modified>
+      <Modified>2018-10-01T18:06:11.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.072</Modified>
+      <Modified>2018-10-01T18:06:11.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.104</Modified>
+      <Modified>2018-10-01T18:06:11.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.144</Modified>
+      <Modified>2018-10-01T18:06:11.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.178</Modified>
+      <Modified>2018-10-01T18:06:11.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.211</Modified>
+      <Modified>2018-10-01T18:06:11.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.244</Modified>
+      <Modified>2018-10-01T18:06:11.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.280</Modified>
+      <Modified>2018-10-01T18:06:11.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.358</Modified>
+      <Modified>2018-10-01T18:06:11.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.442</Modified>
+      <Modified>2018-10-01T18:06:11.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.457</Modified>
+      <Modified>2018-10-01T18:06:11.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.470</Modified>
+      <Modified>2018-10-01T18:06:11.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.485</Modified>
+      <Modified>2018-10-01T18:06:11.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.498</Modified>
+      <Modified>2018-10-01T18:06:11.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.510</Modified>
+      <Modified>2018-10-01T18:06:11.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.709</Modified>
+      <Modified>2018-10-01T18:06:11.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.764</Modified>
+      <Modified>2018-10-01T18:06:11.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.781</Modified>
+      <Modified>2018-10-01T18:06:12.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.798</Modified>
+      <Modified>2018-10-01T18:06:12.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.812</Modified>
+      <Modified>2018-10-01T18:06:12.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.825</Modified>
+      <Modified>2018-10-01T18:06:12.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.848</Modified>
+      <Modified>2018-10-01T18:06:12.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.907</Modified>
+      <Modified>2018-10-01T18:06:12.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.926</Modified>
+      <Modified>2018-10-01T18:06:12.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.941</Modified>
+      <Modified>2018-10-01T18:06:12.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.953</Modified>
+      <Modified>2018-10-01T18:06:12.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:26.966</Modified>
+      <Modified>2018-10-01T18:06:12.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-09-28T20:53:54.891</Modified>
+      <Modified>2018-10-01T18:04:51.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.001</Modified>
+      <Modified>2018-10-01T18:06:12.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.046</Modified>
+      <Modified>2018-10-01T18:06:12.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.062</Modified>
+      <Modified>2018-10-01T18:06:12.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.373</Modified>
+      <Modified>2018-10-01T18:06:12.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.431</Modified>
+      <Modified>2018-10-01T18:06:12.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.473</Modified>
+      <Modified>2018-10-01T18:06:12.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.535</Modified>
+      <Modified>2018-10-01T18:06:12.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.562</Modified>
+      <Modified>2018-10-01T18:06:12.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.607</Modified>
+      <Modified>2018-10-01T18:06:12.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.628</Modified>
+      <Modified>2018-10-01T18:06:12.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.689</Modified>
+      <Modified>2018-10-01T18:06:12.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.715</Modified>
+      <Modified>2018-10-01T18:06:12.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-09-28T20:55:27.785</Modified>
+      <Modified>2018-10-01T18:06:12.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-09-28T20:55:25.426</Modified>
+      <Modified>2018-10-01T18:06:11.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mcboyd\source\repos\hololens-jaco2-vuforia\App\DisplayDepth\bin\x86\Release\Core\DisplayDepth.exe">
       <PackagePath>DisplayDepth.exe</PackagePath>
-      <Modified>2018-09-28T20:55:30.667</Modified>
+      <Modified>2018-10-01T18:06:14.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

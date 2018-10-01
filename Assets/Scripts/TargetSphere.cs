@@ -62,28 +62,10 @@ public class TargetSphere : MonoBehaviour {
             lastSpherePlaced.GetComponent<SphereXYZ>().X = _relativePos.x; // vectPtoS.x;
             lastSpherePlaced.GetComponent<SphereXYZ>().Y = _relativePos.y; // vectPtoS.y;
             lastSpherePlaced.GetComponent<SphereXYZ>().Z = _relativePos.z; // vectPtoS.z;
-            // displayText = "Arm Pos: " + armV.ToString() + "\r\nSphere Pos: " + lastSpherePlaced.transform.position.ToString() + "\n\r" + vectPtoS.ToString();
-            // lastSphereLabelPlacedText.text = displayText;
-            //Renderer rend = lastSpherePlaced.GetComponent<Renderer>();
-            //string test = rend.material.color.ToString();
-            //string test2 = "\n\rColor: " + test;
-            //lastSphereLabelPlacedText.text = vectPtoS.ToString() + "\r\nRel: " + _relativePos.ToString(); // + test2; // + "\n\r" + lastSpherePlaced.name.ToString() + "\n\r" + lastSphereLabelPlaced.name.ToString();
             lastSphereLabelPlacedText.text = _relativePos.ToString();
         }
-
-
-        //_arm.gameObject.SetActive(false);
-        
-        VuforiaBehaviour.Instance.enabled = false;
-
-        //lastSpherePlaced = Instantiate(spherePrefab, cursor.transform.position + sPos, Quaternion.Euler(new Vector3(0, 0, 0)));
-        //lastSphereLabelPlaced = Instantiate(labelPrefab, lastSpherePlaced.transform.position + (new Vector3(0.01f, 0.01f, 0.01f)), transform.rotation);
-        //lastSphereLabelPlacedText = lastSphereLabelPlaced.GetComponent<TextMesh>();
-        //_arm = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ArmPlane>().lastPlanePlaced;
-        //Vector3 vectPtoS = _arm.position + lastSpherePlaced.transform.position;
-        //string displayText = "Arm Pos: " + _arm.position.ToString() + "\r\nSphere Pos: " + lastSpherePlaced.transform.position.ToString() + "\n\r" + vectPtoS.ToString();
-        //lastSphereLabelPlacedText.text = displayText; // "Pos: " + lastSphereLabelPlaced.transform.position.ToString(); // (new Vector3(-0.5f, 0.5f, 0.5f)).ToString();
-        //lastSphereLabelPlacedText.text = vectPtoS.ToString();
+        // Disables Vuforia...only used for testing/video recording
+        //VuforiaBehaviour.Instance.enabled = false;
     }
 
     // Use this for initialization
