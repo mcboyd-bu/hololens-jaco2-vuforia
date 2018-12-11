@@ -66,6 +66,7 @@ public class TargetSphere : MonoBehaviour {
         }
         // Disables Vuforia...only used for testing/video recording
         //VuforiaBehaviour.Instance.enabled = false;
+        
     }
 
     // Use this for initialization

@@ -19,6 +19,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     private bool _tracked;
     private int _foundNumber;
 
+    // Added 11/1/18:
+    private GameObject _HelpHolder;
+
     #region PROTECTED_MEMBER_VARIABLES
 
     protected TrackableBehaviour mTrackableBehaviour;
@@ -60,7 +63,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
-            OnTrackingFound();
+            OnTrackingFound(mTrackableBehaviour.TrackableName);
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NOT_FOUND)
@@ -81,7 +84,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     #region PROTECTED_METHODS
 
-    protected virtual void OnTrackingFound()
+    protected virtual void OnTrackingFound(string foundObj="unk")
     {
         //Debug.Log("4. virtual void OnTrackingFound");
         //var rendererComponents = GetComponentsInChildren<Renderer>(true);
@@ -100,8 +103,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //foreach (var component in canvasComponents)
         //    component.enabled = true;
 
-        _sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
-        _foundNumber += 1;
+        GameObject _LookingArm = GameObject.Find("LookingArm");
+        GameObject _HHPlane = GameObject.Find("HHPlane");
+        _HelpHolder = GameObject.Find("HelpHolder");
+        TextMesh _tm = _LookingArm.GetComponent<TextMesh>();
+        _tm.text = "TrackingFound for: " + foundObj;
+
+        //_sphereLabel = GameObject.Find("SphereLabel1").GetComponent<TextMesh>();
+        //_foundNumber += 1;
 
         if (!_tracked)
         {

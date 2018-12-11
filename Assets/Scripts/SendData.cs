@@ -71,6 +71,7 @@ public class SendData : MonoBehaviour {
 
     }
 
+    // Used for testing
     IEnumerator Post()
     {
         var request = new UnityWebRequest(endPoint, "POST");
@@ -90,6 +91,7 @@ public class SendData : MonoBehaviour {
         //Debug.Log("Status Code: " + request.responseCode);
     }
 
+    // Used to actually send data from the arm to the API endpoint on the PC
     public IEnumerator SendDataToAPI(float _x, float _y, float _z)
     {
         WWWForm webForm = new WWWForm();
