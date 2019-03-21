@@ -26,7 +26,7 @@ public class SendMsgs : MonoBehaviour {
 		
 	}
 
-    // Used to actually send data from the arm to the API endpoint on the PC
+    // Used to actually send data from the Hololens to the API endpoint on the PC
     public IEnumerator SendMsg(string _msg)
     {
         WWWForm form = new WWWForm();

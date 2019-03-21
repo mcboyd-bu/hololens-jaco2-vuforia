@@ -28,14 +28,11 @@ public class VuMarkHandler : MonoBehaviour {
                 // Then increment the counter so none of this stuff happens again
                 pCount += 1;
 
+                SwapDatasets();
+
                 // Then, either create the virtual spheres (for testing / demo)
-                TargetSphere.instance.CreateSphere();
-
-                // Or, enable the Vuforia image database
-                //SwapDatasets();
-                
+                TargetSphere.instance.CreateSphere();  
             }
-
         }
     }
 
@@ -48,24 +45,11 @@ public class VuMarkHandler : MonoBehaviour {
         if (changeType == "vumark-found")
         {
             StartCoroutine(SendMsgs.instance.SendMsg("vumark found"));
-            //GameObject _LookingArm = GameObject.Find("LookingArm");
-            //GameObject _HHPlane = GameObject.Find("HHPlane");
-            //_HelpHolder = GameObject.Find("HelpHolder");
             Material m_Material = _HHPlane.GetComponent<Renderer>().material;
             m_Material.color = new Color(0.0118f, 0.788f, 0.114f, 1);
             TextMesh _tm = _LookingArm.GetComponent<TextMesh>();
             _tm.text = "Arm Found!";
-            //Invoke("CloseText", 5);
-        } else if (changeType == "imagedb-loaded")
-        {
-            Material m_Material = _HHPlane.GetComponent<Renderer>().material;
-            m_Material.color = new Color(0.0118f, 0.788f, 0.114f, 1);
-            TextMesh _tm = _LookingArm.GetComponent<TextMesh>();
-            _tm.text = "Image DB loaded!";
-            //Invoke("CloseText", 5);
-            //_HelpHolder.SetActive(true);
-        }
-        
+        }         
     }
 
     void CloseText()
@@ -75,31 +59,22 @@ public class VuMarkHandler : MonoBehaviour {
 
     public void SwapDatasets()
     {
-        string vuMarkDataset = "HoloJacoVuMarkDB";
+        StartCoroutine(SendMsgs.instance.SendMsg("activating imagedb"));
+        //string vuMarkDataset = "HoloJacoVuMarkDB";
         string imageDataset = "HoloJacoDeviceImages";
         TrackerManager trackerManager = (TrackerManager)TrackerManager.Instance;
         ObjectTracker objectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
-        //Stop the tracker.
-        objectTracker.Stop();
-
+        
         //Create a new dataset object.
-        DataSet dataset = objectTracker.CreateDataSet();
+        DataSet datasetOld = objectTracker.CreateDataSet();
+        DataSet datasetNew = objectTracker.CreateDataSet();
+        
         //Load and deactivate the dataset if it exists.
-        if (DataSet.Exists(vuMarkDataset))
-        {
-            dataset.Load(vuMarkDataset);
-            objectTracker.DeactivateDataSet(dataset);
-        }
-
         if (DataSet.Exists(imageDataset))
         {
-            dataset.Load(imageDataset);
-            objectTracker.ActivateDataSet(dataset);
+            datasetNew.Load(imageDataset);
+            objectTracker.ActivateDataSet(datasetNew);
         }
-
-        //Start the object tracker.
-        objectTracker.Start();
-        TextChanges("imagedb-loaded");
     }
 
 }

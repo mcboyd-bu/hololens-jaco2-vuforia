@@ -17,7 +17,7 @@ public class DistanceCapture : MonoBehaviour {
 
     private TextMesh _sphereLabel;
 
-    private int tapCount = 0;
+    private int tapCount = 1;
 
     private Color _initColor;
 
@@ -53,6 +53,7 @@ public class DistanceCapture : MonoBehaviour {
             // ResultsLabel.instance.CreateLabel();
             GameObject gazedObj = GazeManager.Instance.HitObject;
             string objName = gazedObj.name;
+            StartCoroutine(SendMsgs.instance.SendMsg("object clicked: " + objName));
             if (objName.StartsWith("Sphere"))
             {
                 GameObject highlightInstance = GameObject.Find("SPH");
@@ -83,9 +84,26 @@ public class DistanceCapture : MonoBehaviour {
                 //Debug.Log(String.Format("About to send data, X: {0}", _x.ToString()));
                 StartCoroutine(SendData.instance.SendDataToAPI(_x, _y, _z));
             }
-            else
+            else if (objName.StartsWith("Cube"))
             {
                 // ResultsLabel.instance.CreateLabel();
+                StartCoroutine(SendMsgs.instance.SendMsg("object clicked, in Cube"));
+                // First check if the "highlight" for the Cube has already been created, and if so, delete it
+                //GameObject highlightInstance = GameObject.Find("CubeHighlight");
+                //if (highlightInstance != null)
+                //    Destroy(highlightInstance);
+
+                //Fetch the Renderer from the GameObject
+                Renderer rend = GazeManager.Instance.HitObject.GetComponent<Renderer>();
+                rend.material.color = new Color(0.502f, 1f, 0f, 0.9f);  // Green color for the selected sphere
+                StartCoroutine(SendMsgs.instance.SendMsg("in Cube, rend material color changed...."));
+                StartCoroutine(SendProbability.instance.GetProbability("cube"));
+                //Transform highlight = Instantiate(sphereHighlightPrefab, gazedObj.transform.position, gazedObj.transform.rotation);
+                //highlight.name = "CubeHighlight";
+            }
+            else
+            {
+                // Nothing really...
             }
         }
         else
