@@ -6,6 +6,7 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
+using HoloToolkit.Unity.InputModule;
 using UnityEngine;
 using Vuforia;
 
@@ -100,6 +101,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (!_tracked)
         {
             _tracked = true;
+            StartCoroutine(SendMsgs.instance.SendMsg("In !tracked based on object: " + foundObj));
+                      
             // Now swap data sets
             //SwapDatasets();
 
@@ -120,7 +123,24 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             foreach (var component in canvasComponents)
                 component.enabled = true;
 
-            
+            if (foundObj == "Box-MarysCrackers")
+            {
+                StartCoroutine(SendMsgs.instance.SendMsg("In !tracked, in first if;"));
+                int prob = GetComponentInChildren<CubeProps>().Probability;
+                StartCoroutine(SendMsgs.instance.SendMsg("In !tracked, in first if; prob = " + prob));
+                if (prob < 0)
+                {
+                    StartCoroutine(SendMsgs.instance.SendMsg("In !tracked, in second if"));
+                    StartCoroutine(SendProbability.instance.GetProbability("cube", returnValue =>
+                    {
+                        prob = returnValue;
+                        StartCoroutine(SendMsgs.instance.SendMsg("In !tracked, in second if; returned prob = " + returnValue));
+                        GetComponentInChildren<CubeProps>().Probability = returnValue;
+                    }));
+                }
+
+            }
+
         }
         else
         {

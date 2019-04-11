@@ -21,6 +21,10 @@ public class DistanceCapture : MonoBehaviour {
 
     private Color _initColor;
 
+    private Color _hGreen = new Color(0.502f, 1f, 0f, 0.9f);  // Green color for the mesh
+    private Color _hYellow = new Color(1f, 0.9f, 0f, 0.9f);  // Yellow color for the mesh
+    private Color _hRed = new Color(1f, 0f, 0.01f, 0.9f);  // Red color for the mesh
+
     // Use this for initialization
     void Start () {
         recognizer = new GestureRecognizer();
@@ -95,9 +99,17 @@ public class DistanceCapture : MonoBehaviour {
 
                 //Fetch the Renderer from the GameObject
                 Renderer rend = GazeManager.Instance.HitObject.GetComponent<Renderer>();
-                rend.material.color = new Color(0.502f, 1f, 0f, 0.9f);  // Green color for the selected sphere
+                int prob = GazeManager.Instance.HitObject.GetComponent<CubeProps>().Probability;
+                if (prob < 31) rend.material.color = _hRed;
+                else if (prob < 76) rend.material.color = _hYellow;
+                else rend.material.color = _hGreen;
+                
                 StartCoroutine(SendMsgs.instance.SendMsg("in Cube, rend material color changed...."));
-                StartCoroutine(SendProbability.instance.GetProbability("cube"));
+                //StartCoroutine(SendProbability.instance.GetProbability("cube", returnValue =>
+                //{
+                //    prob = returnValue;
+                //}));
+                StartCoroutine(SendMsgs.instance.SendMsg("returned prob from cubeprops: " + prob));
                 //Transform highlight = Instantiate(sphereHighlightPrefab, gazedObj.transform.position, gazedObj.transform.rotation);
                 //highlight.name = "CubeHighlight";
             }

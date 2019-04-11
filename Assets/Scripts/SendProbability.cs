@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -48,8 +49,8 @@ public class SendProbability : MonoBehaviour {
         }
     }
 
-    // Used to actually send data from the arm to the API endpoint on the PC
-    public IEnumerator GetProbability(string _obj)
+    // Used to actually get the probability data for the seen object from the API endpoint on the PC
+    public IEnumerator GetProbability(string _obj, System.Action<int> callback = null)
     {
         WWWForm form = new WWWForm();
         //form.AddField("data", _msg);
@@ -68,9 +69,12 @@ public class SendProbability : MonoBehaviour {
             }
             else
             {
-                StartCoroutine(SendMsgs.instance.SendMsg("Form GET request complete!"));
-                string returnText = pages[page] + ":\nReceived: " + www.downloadHandler.text;
-                StartCoroutine(SendMsgs.instance.SendMsg(returnText));
+                //StartCoroutine(SendMsgs.instance.SendMsg("Form GET request complete!"));
+                //string returnText = pages[page] + ":\nReceived: " + www.downloadHandler.text;
+                //StartCoroutine(SendMsgs.instance.SendMsg(returnText));
+                int prob = Convert.ToInt32(www.downloadHandler.text);
+                StartCoroutine(SendMsgs.instance.SendMsg("returned prob in sp.cs: " + prob));
+                callback(prob);
             }
 
             yield return null;
